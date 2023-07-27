@@ -15,8 +15,9 @@ app.post("/voice", (req, res) => {
     }
     for (let i = 0; i < PRESSES; i ++) {
         digitsText += GATE_NUM;
+        digitsText += "wwwwwwwwwwww"
     }
-    debugger;
+    //debugger;
 
     response.play({
         digits: digitsText
