@@ -14,4 +14,10 @@ app.post("/voice", (req, res) => {
     });
 });
 
+app.get("/test", (req, res) => {
+    return res.json({
+        test: "Working!"
+    });
+});
+
 module.exports = app;
