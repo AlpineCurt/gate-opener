@@ -12,6 +12,9 @@ app.post("/voice", (req, res) => {
     response.play({
         digits: `www${GATE_NUM}${GATE_NUM}${GATE_NUM}`
     });
+    return res.json({
+        phone: "post request received"
+    });
 });
 
 app.get("/test", (req, res) => {
