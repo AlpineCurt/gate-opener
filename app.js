@@ -9,13 +9,13 @@ const app = express();
 
 app.post("/voice", (req, res) => {
     const response = new VoiceReponse();
-    let digitsText = ""
+    let digitsText = `${GATE_NUM}`;
     for (let i = 0; i < PAUSES; i++) {
         digitsText += "w";
     }
     for (let i = 0; i < PRESSES; i ++) {
         digitsText += GATE_NUM;
-        digitsText += "wwwwwwwwwwww"
+        digitsText += "wwwwww";
     }
     //debugger;
 
